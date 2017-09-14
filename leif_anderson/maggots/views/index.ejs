@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Maggots</title>
+  </head>
+  <body>
+    <h1>The Wonderful World of Maggots</h1>
+    <a href="/new">Create a NEW Maggot</a>
+    <% for (idx in maggots) { %>
+      <p>Maggot Name: <%= maggots[idx].maggot_name %></p>
+      <p>Fly Name:    <%= maggots[idx].fly_name %></p>
+      <p>Plumpness:   <%= maggots[idx].plumpness %></p>
+      <p><a href="/<%= maggots[idx]._id %>/edit">Edit</a></p>
+    <% } %>
+  </body>
+</html>

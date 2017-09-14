@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Edit Maggot</title>
+  </head>
+  <body>
+    <h1>Make #<%= maggot.maggot_name %>! </h1>
+    <form action="/<%= maggot.id %>" method="post">
+      You can only change the Fly Name, ha ha:
+      <input type="text" name="fly_name" value="<%= maggot.fly_name %>">
+      <input type="submit" value="Make Your Maggot Special!">
+    </form>
+  </body>
+</html>
